@@ -8,13 +8,39 @@ const questions = () => {
     return inquirer.prompt([
         {
             type: 'input',
+            name: 'name',
+            message: 'Please enter your name.',
+            validate: name => {
+                if (name) {
+                    return true;
+                } else {
+                    console.log('You must enter a name!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Please enter your github username.',
+            validate: github => {
+                if (github) {
+                    return true;
+                } else {
+                    console.log('You must enter a github username!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
             name: 'title',
             message: 'What is your project name?',
             validate: projectName => {
                 if (projectName) {
                     return true;
                 } else {
-                    console.log('Please enter a project name!');
+                    console.log('You must enter a project name!');
                     return false;
                 }
             }
@@ -27,7 +53,7 @@ const questions = () => {
                 if (projectDescription) {
                     return true;
                 } else {
-                    console.log('Please enter a description!');
+                    console.log('You must enter a project description!');
                     return false;
                 }
             }
@@ -35,12 +61,12 @@ const questions = () => {
         {
             type: 'input',
             name: 'installation',
-            message: 'Please enter the installation command for your project.',
+            message: 'Please enter a console installation command for your project dependancies.',
             validate: projectInstallation => {
                 if (projectInstallation) {
                     return true;
                 } else {
-                    console.log('Please enter an installation command!');
+                    console.log('You must enter an installation command!');
                     return false;
                 }
             }
@@ -53,7 +79,7 @@ const questions = () => {
                 if (projectUsage) {
                     return true;
                 } else {
-                    console.log('Please enter usage instructions!');
+                    console.log('You must enter usage instructions!');
                     return false;
                 }
             }
@@ -61,28 +87,34 @@ const questions = () => {
         {
             type: 'list',
             name: 'license',
-            message: 'Please choose a project license.',
-            choices: ['MIT', 'Visual_Studio', 'Apache_2.0', 'GPL_3.0', 'None'],
+            message: 'Please select a project license.',
+            choices: ['Apache', 'NPM', 'Visual_Studio_Code', 'None'],
             validate: projectLicense => {
                 if (projectLicense) {
                     return true;
                 } else {
-                    console.log('Please choose a license!');
+                    console.log('You must select a project license! Please select "None" if your project does not have a license.');
                     return false;
                 }
             }
         },
     ])
     .then((data) => {
-        let answerData = fileGenerator.generateMarkdown(data);
-        writeToFile('README.md', answerData);
+        let fileData = fileGenerator.generateMarkdown(data);
+        writeToFile('./dist/README.md', fileData);
     })
 };
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, answerData) {
-    fs.writeFile(fileName, answerData, (err) => 
-    err ? console.log(err) : console.log("README file created!"));
+function writeToFile(fileName, fileData) {
+    fs.writeFile(fileName, fileData, err => {
+        if (err) {
+            console.log(err)
+            return;
+        } else {
+            console.log("README file created!")
+        };
+    });
 };
 
 // TODO: Create a function to initialize app
