@@ -1,7 +1,7 @@
-# fwe
+# weffwefwe
 
 ## Description
-fwe
+f
 
 ## Table Of Contents
 * [Description](#description)
@@ -11,17 +11,17 @@ fwe
 * [License](#license)
 
 ## Installation
-Please enter the following command into the console to install the project dependancies: fw
+Please enter the following command into the console to install the project dependancies: wefwef
 
 ## Usage
-ef
+wefwefc
 
 ## Credit
-Name: weiysufuhwef  
-Github Profile: https://github.com/wefwefwe
+Name: owefoweoifoijwef  
+Github Profile: https://github.com/wefwef
 
 ## License 
   Licensed under: Apache_2.0  
   License Link: https://www.apache.org/licenses/LICENSE-2.0  
-  ![] /utils/license_badges/apache.png
+  ![] (/utils/license_badges/apache.png)
   

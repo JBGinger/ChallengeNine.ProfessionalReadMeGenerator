@@ -5,13 +5,13 @@ function renderLicenseBadge(license) {
 
   switch (license) {
     case 'Apache_2.0':
-      licenseBadge = '/utils/license_badges/apache.png';
+      licenseBadge = '(/utils/license_badges/apache.png)';
       break;
     case 'NPM':
-      licenseBadge = '/utils/license_badges/npm.png';
+      licenseBadge = '(/utils/license_badges/npm.png)';
       break;
     case 'Visual_Studio_Code':
-      licenseBadge = '/utils/license_badges/visualstudiocode.png';
+      licenseBadge = '(/utils/license_badges/visualstudiocode.png)';
       break;
     case 'None':
       licenseBadge = '';
