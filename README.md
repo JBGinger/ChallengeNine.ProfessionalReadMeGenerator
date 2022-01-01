@@ -1,7 +1,7 @@
-# ergergreg
+# wefwefwefwwef
 
 ## Description
-ergergerg
+wefwefwef
 
 ## Table Of Contents
 * [Description](#description)
@@ -11,17 +11,17 @@ ergergerg
 * [License](#license)
 
 ## Installation
-Please enter the following command into the console to install the project dependancies: ergregerger
+Please enter the following command into the console to install the project dependancies: wefweffeew
 
 ## Usage
-ergregerg
+wefwefwef
 
 ## Credit
-Name: ergre  
-Github Profile: https://github.com/regergre
+Name: wefwef  
+Github Profile: https://github.com/wefwefwefwe
 
 ## License 
-  Licensed under: Apache_2.0  
-  License Link: https://www.apache.org/licenses/LICENSE-2.0  
-  ![alt text](utils/license_badges/apache.png)
+  Licensed under: MIT  
+  License Link: https://www.mit.edu/~amini/LICENSE.md  
+  ![alt text](https://img.shields.io/npm/l/starwars-names.svg?style=flat-square)
   

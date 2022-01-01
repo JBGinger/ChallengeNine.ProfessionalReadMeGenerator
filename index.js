@@ -88,7 +88,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Please select a project license.',
-            choices: ['Apache_2.0', 'NPM', 'Visual_Studio_Code', 'None'],
+            choices: ['Apache_2.0', 'MIT', 'NPM', 'Visual_Studio_Code', 'None'],
             validate: projectLicense => {
                 if (projectLicense) {
                     return true;
