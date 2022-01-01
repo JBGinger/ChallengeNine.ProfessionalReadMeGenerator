@@ -5,16 +5,13 @@ function renderLicenseBadge(license) {
 
   switch (license) {
     case 'Apache_2.0':
-      licenseBadge = '';
+      licenseBadge = 'https://img.shields.io/badge/License-Apache_2.0-blue.svg';
       break;
     case 'MIT':
       licenseBadge = 'https://img.shields.io/npm/l/starwars-names.svg?style=flat-square';
       break;
     case 'NPM':
-      licenseBadge = '';
-      break;
-    case 'Visual_Studio_Code':
-      licenseBadge = '';
+      licenseBadge = 'https://img.shields.io/npm/v/16';
       break;
     case 'None':
       licenseBadge = '';
@@ -37,9 +34,6 @@ function renderLicenseLink(license) {
       break;
     case 'NPM':
       licenseLink = 'https://docs.npmjs.com/policies/npm-license';
-      break;
-    case 'Visual_Studio_Code':
-      licenseLink = 'https://code.visualstudio.com/license';
       break;
     case 'None':
       licenseLink = 'None';

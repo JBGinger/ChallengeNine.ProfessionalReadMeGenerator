@@ -1,7 +1,7 @@
-# wefwefwefwwef
+# wefwefwefwef
 
 ## Description
-wefwefwef
+wefwefwefwe
 
 ## Table Of Contents
 * [Description](#description)
@@ -11,17 +11,17 @@ wefwefwef
 * [License](#license)
 
 ## Installation
-Please enter the following command into the console to install the project dependancies: wefweffeew
+Please enter the following command into the console to install the project dependancies: fwefwef
 
 ## Usage
-wefwefwef
+wefwef
 
 ## Credit
-Name: wefwef  
-Github Profile: https://github.com/wefwefwefwe
+Name: wfwefwef  
+Github Profile: https://github.com/wefwefwefwef
 
 ## License 
-  Licensed under: MIT  
-  License Link: https://www.mit.edu/~amini/LICENSE.md  
-  ![alt text](https://img.shields.io/npm/l/starwars-names.svg?style=flat-square)
+  Licensed under: Apache_2.0  
+  License Link: https://www.apache.org/licenses/LICENSE-2.0  
+  ![alt text](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
   
