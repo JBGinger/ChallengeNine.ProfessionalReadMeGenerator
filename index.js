@@ -88,7 +88,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Please select a project license.',
-            choices: ['Apache', 'NPM', 'Visual_Studio_Code', 'None'],
+            choices: ['Apache_2.0', 'NPM', 'Visual_Studio_Code', 'None'],
             validate: projectLicense => {
                 if (projectLicense) {
                     return true;
@@ -101,7 +101,7 @@ const questions = () => {
     ])
     .then((data) => {
         let fileData = fileGenerator.generateMarkdown(data);
-        writeToFile('./dist/README.md', fileData);
+        writeToFile('README.md', fileData);
     })
 };
 

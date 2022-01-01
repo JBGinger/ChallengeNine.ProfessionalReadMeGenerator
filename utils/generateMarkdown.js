@@ -4,14 +4,14 @@ function renderLicenseBadge(license) {
   let licenseBadge = "";
 
   switch (license) {
-    case 'Apache':
-      licenseBadge = '../utils/license_badges/apache.png';
+    case 'Apache_2.0':
+      licenseBadge = '/utils/license_badges/apache.png';
       break;
     case 'NPM':
-      licenseBadge = '../utils/license_badges/npm.png';
+      licenseBadge = '/utils/license_badges/npm.png';
       break;
     case 'Visual_Studio_Code':
-      licenseBadge = '../utils/license_badges/visualstudiocode.png';
+      licenseBadge = '/utils/license_badges/visualstudiocode.png';
       break;
     case 'None':
       licenseBadge = '';
@@ -26,7 +26,7 @@ function renderLicenseLink(license) {
   let licenseLink = "";
 
   switch (license) {
-    case 'Apache':
+    case 'Apache_2.0':
       licenseLink = 'https://www.apache.org/licenses/LICENSE-2.0';
       break;
     case 'NPM':
@@ -50,9 +50,9 @@ function renderLicenseSection(data) {
   let licenseLink = renderLicenseLink(data.license);
   let licenseSection =
     `## License 
-  Project License: ${data.license}
-  License Link: ${licenseLink}
-  ${licenseBadge}
+  Licensed under: ${data.license}  
+  License Link: ${licenseLink}  
+  ![] ${licenseBadge}
   `
   return licenseSection;
 }
@@ -82,7 +82,7 @@ Please enter the following command into the console to install the project depen
 ${data.usage}
 
 ## Credit
-Name: ${data.name}
+Name: ${data.name}  
 Github Profile: https://github.com/${data.github}
 
 ${licenseSection}
