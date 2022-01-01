@@ -1,7 +1,7 @@
-# wefwefwefwef
+# wefwef
 
 ## Description
-wefwefwefwe
+wefwef
 
 ## Table Of Contents
 * [Description](#description)
@@ -11,17 +11,17 @@ wefwefwefwe
 * [License](#license)
 
 ## Installation
-Please enter the following command into the console to install the project dependancies: fwefwef
+Please enter the following command into the console to install the project dependancies: wefwef
 
 ## Usage
 wefwef
 
 ## Credit
-Name: wfwefwef  
-Github Profile: https://github.com/wefwefwefwef
+Name: wrefgwefwe  
+Github Profile: https://github.com/wefwef
 
 ## License 
-  Licensed under: Apache_2.0  
-  License Link: https://www.apache.org/licenses/LICENSE-2.0  
-  ![alt text](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+  Licensed under: NPM  
+  License Link: https://docs.npmjs.com/policies/npm-license  
+  ![alt text](https://img.shields.io/npm/v/16)
   
