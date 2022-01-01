@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
+const fileGenerator = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -36,8 +36,8 @@ const questions = () => {
             type: 'input',
             name: 'installation',
             message: 'Please enter the installation command for your project.',
-            validate: projectDescription => {
-                if (projectDescription) {
+            validate: projectInstallation => {
+                if (projectInstallation) {
                     return true;
                 } else {
                     console.log('Please enter an installation command!');
@@ -49,8 +49,8 @@ const questions = () => {
             type: 'input',
             name: 'usage',
             message: 'Please enter usage instructions for your project.',
-            validate: projectDescription => {
-                if (projectDescription) {
+            validate: projectUsage => {
+                if (projectUsage) {
                     return true;
                 } else {
                     console.log('Please enter usage instructions!');
@@ -59,31 +59,36 @@ const questions = () => {
             }
         },
         {
-            type: 'input',
-            name: 'projectLicense',
-            message: 'Please enter your project license.',
-            validate: projectDescription => {
-                if (projectDescription) {
+            type: 'list',
+            name: 'license',
+            message: 'Please choose a project license.',
+            choices: ['MIT', 'Visual_Studio', 'Apache_2.0', 'GPL_3.0', 'None'],
+            validate: projectLicense => {
+                if (projectLicense) {
                     return true;
                 } else {
-                    console.log('Please enter a license!');
+                    console.log('Please choose a license!');
                     return false;
                 }
             }
         },
     ])
+    .then((data) => {
+        let answerData = fileGenerator.generateMarkdown(data);
+        writeToFile('README.md', answerData);
+    })
 };
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-
- }
+function writeToFile(fileName, answerData) {
+    fs.writeFile(fileName, answerData, (err) => 
+    err ? console.log(err) : console.log("README file created!"));
+};
 
 // TODO: Create a function to initialize app
 function init() {
-    questions()
-    .then(writeToFile('ReadMe.md', data));
- }
+    questions();
+};
 
 // Function call to initialize app
 init();
