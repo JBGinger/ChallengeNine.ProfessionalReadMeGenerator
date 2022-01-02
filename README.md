@@ -1,4 +1,4 @@
-# Professional README generator
+# Professional README Generator
 
 ## Description
 The intention of this project is to create a quick and easy method by which a user can generate a professional README file. User input is captured through the Inquirer NPM Package and combined with an existing README template. This README template is then used to generate an .md file that appears in the dist directory.
