@@ -30,7 +30,7 @@ Created By: Jeffrey Brittingham
 Creator Github Profile: https://github.com/JBGinger
 
 ## Questions
-Have any questions about this project? Please send me an email at jeff.brittingham@protonmail.com.
+Have any questions about this project? Please send me an email at jeff.brittingham@protonmail.com.  
 Feel free to take a look at this project's Github repository (along with my other work) on my Github profile: https://github.com/JBGinger.
 
 ## License 
