@@ -19,6 +19,9 @@ Please use the following console command to install project dependancies: npm in
 ## Usage
 If you would like to use this project to generate a README file - Please open your command line, install the project dependancies, and enter "node index.js" to start the application. Once the application has been started, simply answer the prompts as they appear. Your completed README file will appear in the dist directory once all of the prompts have been answered.
 
+## Walkthrough Video
+https://watch.screencastify.com/v/DGpnsUgBjPB9OB1FwXri
+
 ## Contributing
 Please reach out to me through email if you'd like to contribute!
 

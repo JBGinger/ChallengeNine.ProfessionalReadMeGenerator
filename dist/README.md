@@ -1,7 +1,8 @@
-# Professional README generator
+# README Generator
+![alt text](https://img.shields.io/npm/v/16)
 
 ## Description
-The intention of this project is to create a quick and easy method by which a user can generate a professional README file. User input is captured through the Inquirer NPM Package and combined with an existing README template. This README template is then used to generate an .md file that appears in the dist directory.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## Table Of Contents
 * [Description](#description)
@@ -17,16 +18,16 @@ The intention of this project is to create a quick and easy method by which a us
 Please use the following console command to install project dependancies: npm install
 
 ## Usage
-If you would like to use this project to generate a README file - Please open your command line, install the project dependancies, and enter "node index.js" to start the application. Once the application has been started, simply answer the prompts as they appear. Your completed README file will appear in the dist directory once all of the prompts have been answered.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## Contributing
-Please reach out to me through email if you'd like to contribute!
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## Tests
-There are no tests for this project.
+There are no tests for this project
 
 ## Credit
-Created By: Jeffrey Brittingham  
+Created By: Jeff  
 Creator Github Profile: https://github.com/JBGinger
 
 ## Questions
@@ -34,6 +35,6 @@ Have any questions about this project? Please send me an email at jeff.brittingh
 Feel free to take a look at this project's Github repository (along with my other work) on my Github profile: https://github.com/JBGinger.
 
 ## License 
-  Licensed Under: None  
-  License Link: None
+  Licensed Under: NPM  
+  License Link: https://docs.npmjs.com/policies/npm-license
   
