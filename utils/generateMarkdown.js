@@ -46,13 +46,11 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(data) {
-  let licenseBadge = renderLicenseBadge(data.license);
   let licenseLink = renderLicenseLink(data.license);
   let licenseSection =
     `## License 
-  Licensed under: ${data.license}  
-  License Link: ${licenseLink}  
-  ![alt text](${licenseBadge})
+  Licensed Under: ${data.license}  
+  License Link: ${licenseLink}
   `
   return licenseSection;
 }
@@ -61,9 +59,11 @@ function renderLicenseSection(data) {
 function generateMarkdown(data) {
 
   let licenseSection = renderLicenseSection(data);
+  let licenseBadge = renderLicenseBadge(data.license);
 
   let fileData =
-    `# ${data.title}
+  `# ${data.title}
+![alt text](${licenseBadge})
 
 ## Description
 ${data.description}
@@ -72,18 +72,31 @@ ${data.description}
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
 * [Credit](#credit)
+* [Questions](#questions)
 * [License](#license)
 
 ## Installation
-Please enter the following command into the console to install the project dependancies: ${data.installation}
+Please use the following console command to install project dependancies: ${data.installation}
 
 ## Usage
 ${data.usage}
 
+## Contributing
+${data.contribute}
+
+## Tests
+${data.tests}
+
 ## Credit
-Name: ${data.name}  
-Github Profile: https://github.com/${data.github}
+Created By: ${data.name}  
+Creator Github Profile: https://github.com/${data.github}
+
+## Questions
+Have any questions about this project? Please send me an email at ${data.email}.
+Feel free to take a look at this project's Github repository (along with my other work) on my Github profile: https://github.com/${data.github}.
 
 ${licenseSection}
 `;

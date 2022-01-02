@@ -34,8 +34,21 @@ const questions = () => {
         },
         {
             type: 'input',
+            name: 'email',
+            message: 'Please enter your email address.',
+            validate: email => {
+                if (email) {
+                    return true;
+                } else {
+                    console.log('You must enter an email address!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
             name: 'title',
-            message: 'What is your project name?',
+            message: 'Please enter a project name.',
             validate: projectName => {
                 if (projectName) {
                     return true;
@@ -85,6 +98,32 @@ const questions = () => {
             }
         },
         {
+            type: 'input',
+            name: 'contribute',
+            message: 'Please enter contribution guidelines for your project.',
+            validate: projectContribution => {
+                if (projectContribution) {
+                    return true;
+                } else {
+                    console.log('You must enter contribution instructions!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Please enter test instructions for your project.',
+            validate: testInstructions => {
+                if (testInstructions) {
+                    return true;
+                } else {
+                    console.log('You must enter test instructions!');
+                    return false;
+                }
+            }
+        },
+        {
             type: 'list',
             name: 'license',
             message: 'Please select a project license.',
@@ -101,7 +140,7 @@ const questions = () => {
     ])
     .then((data) => {
         let fileData = fileGenerator.generateMarkdown(data);
-        writeToFile('README.md', fileData);
+        writeToFile('./dist/README.md', fileData);
     })
 };
 
